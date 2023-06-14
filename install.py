@@ -3,7 +3,6 @@
 import os
 import subprocess
 import sys
-import git
 from subprocess import STDOUT, check_call
 
 # Dependencies #
@@ -25,12 +24,5 @@ sudo_install(git_package)
 sudo_install(pip_package)
 
 pip_install(gitPython_pip)
-
-repo_url = 'https://github.com/eembc/coremark.git'
-local_path = 'coremark'
-
-print(f'Cloning Repository: {repo_url}')
-git.Repo.clone_from(repo_url, local_path)
-print(f'Repository Cloned at location: {local_path}')
 
 
