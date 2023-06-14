@@ -10,7 +10,7 @@ repo_url = 'https://github.com/eembc/coremark.git'
 
 print(f'Cloning Repository: {repo_url}')
 git.Repo.clone_from(repo_url, pwd)
-print(f'Repository Cloned at location: {local_path}')
+print(f'Repository Cloned at location: {pwd}')
 
 def run_cmd(command):
     p1 = subprocess.call([command], cwd=pwd)
