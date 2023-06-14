@@ -4,7 +4,7 @@
 import subprocess
 import os
 
-pwd = 'home/repos/'
+pwd = '../home/repos/'
 
 def run_cmd(command):
     p1 = subprocess.call([command], cwd=pwd)
