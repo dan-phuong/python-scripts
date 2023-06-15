@@ -9,6 +9,9 @@ from subprocess import STDOUT, check_call
 git_package = "git-all"
 pip_package = "python3-pip"
 gitPython_pip = "GitPython"
+distro_pip = "distro"
+bs4_pip = "bs4"
+requests_pip = "requests"
 
 def sudo_install(package):
     print(f"Installing: {package}")
@@ -24,5 +27,6 @@ sudo_install(git_package)
 sudo_install(pip_package)
 
 pip_install(gitPython_pip)
-
-
+pip_install(distro_pip)
+pip_install(bs4_pip)
+pip_install(requests_pip)
